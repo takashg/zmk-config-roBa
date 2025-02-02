@@ -73,10 +73,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESCAPE  &kp INTERNATIONAL_4  &kp INTERNATIONAL_9  &kp INTERNATIONAL_6  &trans                      &kp F1  &kp F2          &kp UP_ARROW  &kp F4           &kp F5
-&trans      &kp INTERNATIONAL_7  &kp INTERNATIONAL_8  &trans               &trans  &trans      &none   &kp F6  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp F10
-&trans      &trans               &trans               &trans               &trans  &trans      &trans  &trans  &trans          &trans        &trans           &kp F11
-&trans      &trans               &trans               &trans               &trans  &trans      &trans  &trans                                                 &kp F12
+&kp ESCAPE  &kp INTERNATIONAL_4  &kp LANG_ZENKAKUHANKAKU  &kp LANG5  &trans                      &kp F1  &kp F2          &kp UP_ARROW  &kp F4           &kp F5
+&trans      &kp INTERNATIONAL_7  &kp INTERNATIONAL_8      &trans     &trans  &trans      &none   &kp F6  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp F10
+&trans      &trans               &trans                   &trans     &trans  &trans      &trans  &trans  &trans          &trans        &trans           &kp F11
+&trans      &trans               &trans                   &trans     &trans  &trans      &trans  &trans                                                 &kp F12
             >;
         };
 
