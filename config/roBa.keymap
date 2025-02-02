@@ -21,7 +21,7 @@
         };
 
         English {
-            bindings = <&kp INTERNATIONAL_3>;
+            bindings = <&kp INTERNATIONAL_9>;
             key-positions = <19 20>;
         };
     };
