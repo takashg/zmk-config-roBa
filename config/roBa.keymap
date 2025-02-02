@@ -52,8 +52,8 @@
         default_layer {
             bindings = <
 &kp Q  &kp W  &kp E  &kp R         &kp T                                                         &kp Y        &kp U  &lt 0 I    &kp O    &kp P
-&kp A  &kp S  &kp D  &kp F         &kp G      &kp LA(F4)                &kp MINUS                &kp H        &kp J  &kp K      &kp L    &kp LCTRL
-&kp Z  &kp X  &kp C  &kp V         &kp B      &kp COLON                 &kp SEMICOLON            &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp A  &kp S  &kp D  &kp F         &kp G      &kp LA(F4)                &none                    &kp H        &kp J  &kp K      &kp L    &kp LCTRL
+&kp Z  &kp X  &kp C  &kp V         &kp B      &none                     &none                    &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &none  &none  &none  &kp LEFT_WIN  &lt 1 TAB  &mt LEFT_SHIFT SPACE      &mt RIGHT_ALT BACKSPACE  &lt 2 ENTER                             &none
             >;
 
@@ -62,10 +62,10 @@
 
         NUM {
             bindings = <
-&kp NUMBER_1                &kp NUMBER_2     &kp NUMBER_3     &kp NUMBER_4     &kp N5                                      &kp NUMBER_6      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp F1                      &kp F2           &kp F3           &kp F4           &kp F5      &kp K_MUTE      &kp UNDERSCORE  &kp EXCLAMATION   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp EQUAL       &trans          &kp LEFT_BRACKET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK
-&trans                      &trans           &trans           &trans           &trans      &trans          &trans          &trans                                                      &kp SLASH
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                           &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_SUBTRACT
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5   &kp K_MUTE      &none   &kp NUMBER_0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS
+&kp F6        &kp F7        &kp F8        &kp F9        &kp F10  &kp EQUAL       &trans  &kp KP_EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_ASTERISK
+&trans        &trans        &trans        &trans        &trans   &trans          &trans  &trans                                                  &kp KP_DIVIDE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
