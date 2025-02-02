@@ -70,7 +70,7 @@
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                             &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_SUBTRACT
 &kp F1        &kp F2        &kp F3        &kp F4        &kp F5   &kp K_MUTE        &none   &kp NUMBER_0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS
 &kp F6        &kp F7        &kp F8        &kp F9        &kp F10  &kp KP_EQUAL      &trans  &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_ASTERISK
-&trans        &trans        &trans        &trans        &trans   &trans            &trans  &trans                                                  &kp KP_DIVIDE
+&kp F11       &kp F12       &trans        &trans        &trans   &trans            &trans  &trans                                                  &kp KP_DIVIDE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -78,10 +78,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESCAPE  &kp INTERNATIONAL_4  &kp LANG_ZENKAKUHANKAKU  &kp LANG5  &trans                      &kp F1  &kp F2          &kp UP_ARROW  &kp F4           &kp F5
-&trans      &kp LANGUAGE_1       &kp LANGUAGE_2           &trans     &trans  &trans      &none   &kp F6  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp F10
-&trans      &trans               &trans                   &trans     &trans  &trans      &trans  &trans  &trans          &trans        &trans           &kp F11
-&trans      &trans               &trans                   &trans     &trans  &trans      &trans  &trans                                                 &kp F12
+&trans    &trans  &trans  &trans  &trans                      &trans  &trans          &kp UP_ARROW  &trans           &trans
+&kp LALT  &kp F4  &trans  &trans  &trans  &trans      &none   &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &trans
+&trans    &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans          &trans        &trans           &trans
+&trans    &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                 &trans
             >;
         };
 
