@@ -78,10 +78,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans  &trans                          &trans    &trans              &kp UP_ARROW  &trans               &trans
-&kp LALT    &kp F4  &trans  &trans  &trans  &kp K_MUTE      &none   &kp HOME  &kp LEFT_ARROW      &kp DOWN      &kp RIGHT_ARROW      &kp END
-&trans      &trans  &trans  &trans  &trans  &trans          &trans  &trans    &kp LG(LEFT_ARROW)  &kp LG(M)     &kp LG(RIGHT_ARROW)  &trans
-&trans      &trans  &trans  &trans  &trans  &trans          &trans  &trans                                                           &trans
+&trans       &trans              &kp LA(UP_ARROW)  &trans               &trans                                   &trans    &trans              &kp UP_ARROW  &trans               &trans
+&kp LC(TAB)  &kp LA(LEFT_ARROW)  &trans            &kp LA(RIGHT_ARROW)  &kp LC(LS(TAB))  &kp K_MUTE      &none   &kp HOME  &kp LEFT_ARROW      &kp DOWN      &kp RIGHT_ARROW      &kp END
+&trans       &trans              &trans            &trans               &trans           &trans          &trans  &trans    &kp LG(LEFT_ARROW)  &kp LG(M)     &kp LG(RIGHT_ARROW)  &trans
+&trans       &trans              &trans            &trans               &trans           &trans          &trans  &trans                                                           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -101,7 +101,7 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans           &trans    &kp LC(T)  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LC(LS(TAB))  &mkp MB1  &mkp MB3   &mkp MB2  &kp LC(TAB)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LC(LS(TAB))  &mkp MB1  &trans     &mkp MB2  &kp LC(TAB)
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans           &mkp MB4  &kp LC(W)  &mkp MB5  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                          &trans
             >;
