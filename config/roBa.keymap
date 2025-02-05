@@ -73,7 +73,7 @@
 &kp F11       &kp F12       &trans        &trans        &trans   &trans            &trans  &trans                                                   &kp KP_DIVIDE
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         FUNCTION {
