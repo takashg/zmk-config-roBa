@@ -62,15 +62,15 @@
 &kp LEFT_WIN  &kp LALT        &mo 5           &lt 1 DELETE  &lt 2 TAB  &lt 3 SPACE      &kp BACKSPACE  &kp ENTER                                        &none
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         NUM {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                             &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_SUBTRACT
-&kp F1        &kp F2        &kp F3        &kp F4        &kp F5   &kp K_MUTE        &none   &kp NUMBER_0   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS
-&kp F6        &kp F7        &kp F8        &kp F9        &kp F10  &kp KP_EQUAL      &trans  &kp LS(MINUS)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_ASTERISK
-&kp F11       &kp F12       &trans        &trans        &trans   &trans            &trans  &trans                                                   &kp KP_DIVIDE
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                           &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5   &kp K_MUTE      &none   &kp NUMBER_0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS
+&kp F6        &kp F7        &kp F8        &kp F9        &kp F10  &trans          &trans  &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTRK
+&kp F11       &kp F12       &trans        &trans        &trans   &trans          &trans  &trans                                                  &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -78,11 +78,13 @@
 
         FUNCTION {
             bindings = <
-&trans    &trans  &trans  &trans  &trans                      &trans  &trans          &kp UP_ARROW  &trans           &trans
-&kp LALT  &kp F4  &trans  &trans  &trans  &trans      &none   &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &trans
-&trans    &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans          &trans        &trans           &trans
-&trans    &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                 &trans
+&trans    &trans  &trans  &trans  &trans                          &trans    &trans              &kp UP_ARROW  &trans               &trans
+&kp LALT  &kp F4  &trans  &trans  &trans  &kp K_MUTE      &none   &kp HOME  &kp LEFT_ARROW      &kp DOWN      &kp RIGHT_ARROW      &kp END
+&trans    &trans  &trans  &trans  &trans  &trans          &trans  &trans    &kp LG(LEFT_ARROW)  &kp LG(M)     &kp RG(RIGHT_ARROW)  &trans
+&trans    &trans  &trans  &trans  &trans  &trans          &trans  &trans                                                           &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         Symbol {
@@ -98,11 +100,13 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans           &trans    &kp LC(T)  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LC(LS(TAB))  &mkp MB1  &mkp MB3   &mkp MB2  &kp LC(TAB)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans           &mkp MB4  &kp LC(W)  &mkp MB5  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                          &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         layer_5 {
