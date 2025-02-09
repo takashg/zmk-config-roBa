@@ -62,7 +62,7 @@
 &kp LWIN  &kp LEFT_ALT  &mo 5           &lt 1 DELETE  &lt 2 TAB  &lt 3 SPACE      &kp BACKSPACE  &kp ENTER                              &kp ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         NUM {
