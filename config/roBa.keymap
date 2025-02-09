@@ -25,11 +25,6 @@
             bindings = <&kp LANGUAGE_2>;
             key-positions = <19 20>;
         };
-
-        z {
-            bindings = <&mo 3>;
-            key-positions = <10 38>;
-        };
     };
 
     macros {
