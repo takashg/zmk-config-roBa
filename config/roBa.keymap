@@ -85,10 +85,10 @@
 
         SYMBOL {
             bindings = <
-&kp ESCAPE       &none              &none      &kp BACKSLASH  &kp AMPERSAND                      &trans  &trans             &kp MINUS      &kp TILDE         &kp PIPE
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH   &kp DOLLAR     &kp PERCENT    &none       &trans  &trans  &kp SQT            &kp LPAR       &kp RPAR          &kp AT
-&kp LEFT_SHIFT   &kp COLON          &kp COLON  &kp SEMI       &trans         &trans      &trans  &trans  &kp DOUBLE_QUOTES  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION
-&trans           &trans             &trans     &trans         &trans         &trans      &trans  &trans                                                      &trans
+&kp ESCAPE       &none              &none      &kp BACKSLASH  &kp AMPERSAND                      &kp ASTRK     &kp PLUS           &kp MINUS      &kp TILDE         &kp PIPE
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH   &kp DOLLAR     &kp PERCENT    &none       &trans  &kp QUESTION  &kp SQT            &kp LPAR       &kp RPAR          &kp AT
+&kp LEFT_SHIFT   &kp COLON          &kp COLON  &kp SEMI       &trans         &trans      &trans  &kp EQUAL     &kp DOUBLE_QUOTES  &kp LESS_THAN  &kp GREATER_THAN  &kp SLASH
+&trans           &trans             &trans     &trans         &trans         &trans      &trans  &trans                                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -105,12 +105,12 @@
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
-        SCROLL {
+        SHORTCUTS {
             bindings = <
-&trans  &trans              &kp LA(F4)        &trans               &trans                         &kp LC(PLUS)   &trans              &kp LG(UP_ARROW)  &trans               &trans
-&trans  &kp LA(LEFT_ARROW)  &kp LA(UP_ARROW)  &kp LA(RIGHT_ARROW)  &kp LC(W)  &trans      &trans  &kp LC(MINUS)  &kp LG(LEFT_ARROW)  &kp LG(E)         &kp LG(RIGHT_ARROW)  &trans
-&trans  &trans              &trans            &trans               &trans     &trans      &trans  &trans         &trans              &kp LG(M)         &trans               &trans
-&trans  &trans              &trans            &trans               &trans     &trans      &trans  &trans                                                                    &trans
+&trans               &kp LG(PRINTSCREEN)  &kp LA(F4)        &trans               &trans                         &kp LC(PLUS)   &trans              &kp LG(UP_ARROW)  &trans               &trans
+&kp LA(PRINTSCREEN)  &kp LA(LEFT_ARROW)   &kp LA(UP_ARROW)  &kp LA(RIGHT_ARROW)  &kp LC(W)  &trans      &trans  &kp LC(MINUS)  &kp LG(LEFT_ARROW)  &kp LG(E)         &kp LG(RIGHT_ARROW)  &trans
+&trans               &trans               &trans            &trans               &trans     &trans      &trans  &trans         &trans              &kp LG(M)         &trans               &trans
+&trans               &trans               &trans            &trans               &trans     &trans      &trans  &trans                                                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
