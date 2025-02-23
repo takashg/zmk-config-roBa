@@ -5,7 +5,8 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 4
-#define SCROLL 1
+#define SHORTCUTS 1
+//#define SCROLL 1
 #define NUM 6
 
 &mt {
