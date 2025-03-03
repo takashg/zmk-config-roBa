@@ -89,7 +89,7 @@
 
         SYMBOL {
             bindings = <
-&kt CAPSLOCK     &kp DOUBLE_QUOTES  &kp HASH         &kp DOLLAR     &kp PERCENT                          &kp AMPERSAND  &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans           &kp DOUBLE_QUOTES  &kp HASH         &kp DOLLAR     &kp PERCENT                          &kp AMPERSAND  &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
 &kp EXCLAMATION  &kp SEMI           &kp COLON        &kp BACKSLASH  &kp PIPE     &trans      &trans      &kp AT         &kp ASTERISK      &kp LPAR          &kp RPAR           &kp QUESTION
 &kp UNDER        &kp LEFT_BRACE     &kp RIGHT_BRACE  &kp PLUS       &kp GRAVE    &trans      &trans      &kp EQUAL      &kp TILDE         &kp LESS_THAN     &kp GREATER_THAN   &kp SLASH
 &trans           &trans             &trans           &kp MINUS      &trans       &trans      &kp DELETE  &trans                                                                &trans
