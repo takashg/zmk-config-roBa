@@ -66,7 +66,7 @@
 
         SHORTCUTS {
             bindings = <
-&trans               &kp LA(F4)           &kp LA(UP_ARROW)  &kp LC(W)            &trans                           &trans  &trans              &kp LG(UP_ARROW)  &trans               &trans
+&trans               &kp LC(W)            &kp LA(UP_ARROW)  &kp LA(F4)           &trans                           &trans  &trans              &kp LG(UP_ARROW)  &trans               &trans
 &kp LC(LS(TAB))      &kp LA(LEFT_ARROW)   &kp LG(TAB)       &kp LA(RIGHT_ARROW)  &kp LC(TAB)  &trans      &trans  &trans  &kp LG(LEFT_ARROW)  &kp LG(E)         &kp LG(RIGHT_ARROW)  &trans
 &kp LA(PRINTSCREEN)  &kp LG(PRINTSCREEN)  &kp LG(LS(S))     &trans               &trans       &trans      &trans  &trans  &trans              &kp LG(M)         &trans               &trans
 &trans               &trans               &trans            &trans               &trans       &trans      &trans  &trans                                                             &trans
