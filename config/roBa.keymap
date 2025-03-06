@@ -88,10 +88,10 @@
 
         SYMBOL {
             bindings = <
-&trans           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE       &kp PERCENT                          &trans  &kp HASH     &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &trans
-&kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp DOLLAR   &trans      &trans      &trans  &kp AT_SIGN  &kp COLON          &kp SEMICOLON     &kp QUESTION
-&trans           &kp LESS_THAN         &kp GREATER_THAN       &kp GRAVE      &trans       &trans      &trans      &trans  &kp TILDE    &kp AMPERSAND      &kp UNDER         &trans
-&trans           &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans         &trans       &trans      &kp DELETE  &trans                                                    &trans
+&trans           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE       &kp GRAVE                           &trans  &kp HASH     &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &trans
+&kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp DOLLAR  &trans      &trans      &trans  &kp AT_SIGN  &kp COLON          &kp SEMICOLON     &kp QUESTION
+&trans           &kp LESS_THAN         &kp GREATER_THAN       &kp PERCENT    &trans      &trans      &trans      &trans  &kp TILDE    &kp AMPERSAND      &kp UNDER         &trans
+&trans           &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans         &trans      &trans      &kp DELETE  &trans                                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
