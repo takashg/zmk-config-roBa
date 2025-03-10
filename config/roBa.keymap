@@ -121,10 +121,10 @@
 
         ONISHI_RAYOUT {
             bindings = <
-&kp Q               &kp L         &kp U           &kp COMMA  &kp SEMI                                     &kp F   &kp W  &kp R    &kp Y  &kp P
-&mt LEFT_CONTROL E  &kp I         &mt LEFT_ALT A  &lt 4 O    &kp PERIOD               &trans      &tog 6  &kp K   &kp T  &lt 4 N  &kp S  &mt RIGHT_CONTROL H
-&kp Z               &kp X         &kp C           &kp V      &mt LEFT_SHIFT LEFT_WIN  &trans      &trans  &kp G   &kp D  &kp M    &kp J  &kp B
-&kp LA(GRAVE)       &kt CAPSLOCK  &tog 2          &trans     &trans                   &trans      &trans  &trans                         &kp ESCAPE
+&kp Q               &kp L         &kp U           &kp MINUS      &kp SEMI                        &kp F   &kp W  &kp R    &kp Y  &kp P
+&mt LEFT_CONTROL E  &kp I         &mt LEFT_ALT A  &kp F          &kp PERIOD  &trans      &tog 6  &kp K   &kp T  &lt 4 N  &kp S  &mt RIGHT_CONTROL H
+&mt Z LEFT_SHIFT    &kp X         &kp C           &kp V          &kp COMMA   &trans      &trans  &kp G   &kp D  &kp M    &kp J  &mt B RIGHT_SHIFT
+&tog 2              &kt CAPSLOCK  &none           &kp LA(GRAVE)  &trans      &trans      &trans  &trans                         &kp ESCAPE
             >;
         };
     };
