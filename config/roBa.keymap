@@ -55,10 +55,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W    &kp E           &kp R            &kp T                                        &kp Y        &kp U  &kp I      &kp O       &kp P
-&mt LEFT_CONTROL A  &lt 4 S  &mt LEFT_ALT D  &kp F            &kp G        &kp K_MUTE2      &tog 6         &kp H        &kp J  &lt 4 K    &lt 1 L     &mt RIGHT_CONTROL MINUS
-&mt LEFT_SHIFT Z    &kp X    &kp C           &kp V            &kp B        &none            &none          &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT LEFT_WIN
-&none               &none    &none           &lt 1 LA(GRAVE)  &lt 2 SPACE  &lt 3 TAB        &kp BACKSPACE  &lt 5 ENTER                                &kp ESCAPE
+&kp Q               &kp W             &kp E    &kp R            &kp T                                        &kp Y        &kp U    &kp I      &kp O              &kp P
+&mt LEFT_CONTROL A  &mt LEFT_SHIFT S  &lt 4 D  &mt LEFT_ALT F   &kp G        &kp K_MUTE2      &tog 6         &kp H        &lt 1 J  &lt 4 K    &mt RIGHT_SHIFT L  &mt RIGHT_CONTROL MINUS
+&mt LEFT_SHIFT Z    &kp X             &kp C    &kp V            &kp B        &none            &none          &kp N        &kp M    &kp COMMA  &kp PERIOD         &mt RIGHT_SHIFT LEFT_WIN
+&none               &none             &none    &lt 1 LA(GRAVE)  &lt 2 SPACE  &lt 3 TAB        &kp BACKSPACE  &lt 5 ENTER                                         &kp ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp K_VOLUME_DOWN2 K_VOLUME_UP2>;
@@ -99,10 +99,10 @@
 
         MOUSE_BLUETOOTH {
             bindings = <
-&bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &none   &none     &none  &none     &none
-&kp LEFT_CONTROL  &none         &none         &none         &none         &none       &none   &none   &mkp MB1  &none  &mkp MB2  &kp RIGHT_CONTROL
-&kp LEFT_SHIFT    &none         &none         &none         &none         &none       &none   &none   &trans    &none  &none     &kp RIGHT_SHIFT
-&bt BT_CLR_ALL    &bt BT_CLR    &none         &trans        &trans        &trans      &trans  &trans                             &none
+&bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &none   &none     &none  &none     &none
+&kp LEFT_CONTROL  &kp LEFT_SHIFT  &none         &none         &none         &none       &none   &none   &mkp MB1  &none  &mkp MB2  &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &none           &none         &none         &none         &none       &none   &none   &mkp MB4  &none  &mkp MB5  &kp RIGHT_SHIFT
+&bt BT_CLR_ALL    &bt BT_CLR      &none         &trans        &trans        &trans      &trans  &trans                             &none
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
@@ -110,10 +110,10 @@
 
         ARROW {
             bindings = <
-&trans            &trans    &kp PAGE_UP    &trans   &trans                      &trans  &trans          &kp UP_ARROW  &trans           &trans
-&kp LEFT_CONTROL  &kp HOME  &kp PAGE_DOWN  &kp END  &trans  &none       &none   &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp RIGHT_CONTROL
-&kp LSHFT         &trans    &trans         &trans   &trans  &trans      &trans  &trans  &trans          &trans        &trans           &kp RIGHT_SHIFT
-&trans            &trans    &trans         &trans   &trans  &trans      &trans  &trans                                                 &trans
+&trans            &trans               &kp PAGE_UP    &trans   &trans                      &trans  &trans          &kp UP_ARROW  &trans                       &trans
+&kp LEFT_CONTROL  &mt LEFT_SHIFT HOME  &kp PAGE_DOWN  &kp END  &trans  &none       &none   &trans  &kp LEFT_ARROW  &kp DOWN      &mt RIGHT_SHIFT RIGHT_ARROW  &kp RIGHT_CONTROL
+&kp LSHFT         &trans               &trans         &trans   &trans  &trans      &trans  &trans  &trans          &trans        &trans                       &kp RIGHT_SHIFT
+&trans            &trans               &trans         &trans   &trans  &trans      &trans  &trans                                                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -121,10 +121,10 @@
 
         ONISHI_RAYOUT {
             bindings = <
-&kp Q               &kp L  &kp U           &kp MINUS      &kp SEMI                        &kp F   &kp W  &kp R    &kp Y  &kp P
-&mt LEFT_CONTROL E  &kp I  &mt LEFT_ALT A  &kp O          &kp PERIOD  &trans      &tog 6  &kp K   &kp T  &lt 4 N  &kp S  &mt RIGHT_CONTROL H
-&mt Z LEFT_SHIFT    &kp X  &kp C           &kp V          &kp COMMA   &trans      &trans  &kp G   &kp D  &kp M    &kp J  &mt B RIGHT_SHIFT
-&none               &none  &none           &kp LA(GRAVE)  &trans      &trans      &trans  &trans                         &kp ESCAPE
+&kp Q               &kp L             &kp U    &kp MINUS       &kp SEMI                        &kp F   &kp W    &kp R    &kp Y              &kp P
+&mt LEFT_CONTROL E  &mt LEFT_SHIFT I  &lt 4 A  &mt LEFT_ALT O  &kp PERIOD  &trans      &tog 6  &kp K   &lt 1 T  &lt 4 N  &mt RIGHT_SHIFT S  &mt RIGHT_CONTROL H
+&mt Z LEFT_SHIFT    &kp X             &kp C    &kp V           &kp COMMA   &trans      &trans  &kp G   &kp D    &kp M    &kp J              &mt B RIGHT_SHIFT
+&none               &none             &none    &kp LA(GRAVE)   &trans      &trans      &trans  &trans                                       &kp ESCAPE
             >;
         };
     };
