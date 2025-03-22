@@ -99,10 +99,10 @@
 
         MOUSE_BLUETOOTH {
             bindings = <
-&bt BT_SEL 0      &bt BT_SEL 1        &bt BT_SEL 2       &bt BT_SEL 3   &bt BT_SEL 4                           &none   &none     &none  &none     &none
-&kp LEFT_CONTROL  &kp C_VOL_DN        &kp C_VOLUME_DOWN  &kp K_VOL_DN   &kp C_VOLUME_DOWN  &none       &none   &none   &mkp MB1  &none  &mkp MB2  &kp RIGHT_CONTROL
-&kp LEFT_SHIFT    &kp K_VOLUME_DOWN2  &kp K_VOLUME_DOWN  &kp K_VOL_DN2  &none              &none       &none   &none   &mkp MB4  &none  &mkp MB5  &kp RIGHT_SHIFT
-&bt BT_CLR_ALL    &bt BT_CLR          &none              &trans         &trans             &trans      &trans  &trans                             &none
+&bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &none   &none     &none  &none     &none
+&kp LEFT_CONTROL  &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP  &none         &none       &none   &none   &mkp MB1  &none  &mkp MB2  &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &none         &kp K_MUTE    &none         &none         &none       &none   &none   &mkp MB4  &none  &mkp MB5  &kp RIGHT_SHIFT
+&bt BT_CLR_ALL    &bt BT_CLR    &none         &trans        &trans        &trans      &trans  &trans                             &none
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
