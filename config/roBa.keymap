@@ -57,7 +57,7 @@
             bindings = <
 &kp Q               &kp W             &kp E    &kp R            &kp T                                       &kp Y        &kp U    &kp I      &kp O              &kp P
 &mt LEFT_CONTROL A  &mt LEFT_SHIFT S  &lt 4 D  &mt LEFT_ALT F   &kp G        &kp C_MUTE      &tog 6         &kp H        &lt 1 J  &lt 4 K    &mt RIGHT_SHIFT L  &mt RIGHT_CONTROL MINUS
-&mt LEFT_SHIFT Z    &kp X             &kp C    &kp V            &kp B        &none           &none          &kp N        &kp M    &kp COMMA  &kp PERIOD         &mt RIGHT_SHIFT LEFT_WIN
+&mt LEFT_SHIFT Z    &kp X             &kp C    &kp V            &kp B        &none           &tog 7         &kp N        &kp M    &kp COMMA  &kp PERIOD         &mt RIGHT_SHIFT LEFT_WIN
 &none               &none             &none    &lt 1 LA(GRAVE)  &lt 2 SPACE  &lt 3 TAB       &kp BACKSPACE  &lt 5 ENTER                                         &kp ESCAPE
             >;
 
@@ -66,9 +66,9 @@
 
         SHORTCUTS {
             bindings = <
-&trans               &kp LC(W)            &kp LA(UP_ARROW)  &kp LA(F4)           &trans                           &trans  &trans              &kp LG(UP_ARROW)  &trans               &trans
+&trans               &kp LC(W)            &kp LA(UP_ARROW)  &kp LA(F4)           &trans                           &trans  &trans              &kp LG(UP_ARROW)  &kp LC(C)            &trans
 &kp LC(LS(TAB))      &kp LA(LEFT_ARROW)   &kp LG(TAB)       &kp LA(RIGHT_ARROW)  &kp LC(TAB)  &trans      &none   &trans  &kp LG(LEFT_ARROW)  &kp LG(E)         &kp LG(RIGHT_ARROW)  &trans
-&kp LA(PRINTSCREEN)  &kp LG(PRINTSCREEN)  &kp LG(LS(S))     &kp PRINTSCREEN      &trans       &trans      &trans  &trans  &trans              &kp LG(M)         &trans               &trans
+&kp LA(PRINTSCREEN)  &kp LG(PRINTSCREEN)  &kp LG(LS(S))     &kp PRINTSCREEN      &trans       &trans      &trans  &trans  &kp LC(V)           &kp LG(M)         &kp LC(X)            &trans
 &trans               &trans               &trans            &trans               &trans       &trans      &trans  &trans                                                             &trans
             >;
 
@@ -112,19 +112,28 @@
             bindings = <
 &trans            &trans               &kp PAGE_UP    &trans   &trans                      &trans  &trans          &kp UP_ARROW  &trans           &trans
 &kp LEFT_CONTROL  &mt LEFT_SHIFT HOME  &kp PAGE_DOWN  &kp END  &trans  &none       &none   &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp RIGHT_CONTROL
-&kp LSHFT         &trans               &trans         &trans   &trans  &trans      &trans  &trans  &trans          &trans        &trans           &kp RIGHT_SHIFT
+&kp LSHFT         &kp LC(SPACE)        &kp LS(SPACE)  &trans   &trans  &trans      &trans  &trans  &trans          &kp LC(PLUS)  &kp LC(MINUS)    &kp RIGHT_SHIFT
 &trans            &trans               &trans         &trans   &trans  &trans      &trans  &trans                                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
-        ONISHI_RAYOUT {
+        ONISHI_LAYOUT {
             bindings = <
 &kp Q               &kp L             &kp U    &kp MINUS       &kp SEMI                        &kp F   &kp W    &kp R    &kp Y              &kp P
 &mt LEFT_CONTROL E  &mt LEFT_SHIFT I  &lt 4 A  &mt LEFT_ALT O  &kp PERIOD  &trans      &tog 6  &kp K   &lt 1 T  &lt 4 N  &mt RIGHT_SHIFT S  &mt RIGHT_CONTROL H
-&mt Z LEFT_SHIFT    &kp X             &kp C    &kp V           &kp COMMA   &trans      &trans  &kp G   &kp D    &kp M    &kp J              &mt B RIGHT_SHIFT
+&mt Z LEFT_SHIFT    &kp X             &kp C    &kp V           &kp COMMA   &trans      &tog 7  &kp G   &kp D    &kp M    &kp J              &mt B RIGHT_SHIFT
 &none               &none             &none    &kp LA(GRAVE)   &trans      &trans      &trans  &trans                                       &kp ESCAPE
+            >;
+        };
+
+        TG_LAYOUT {
+            bindings = <
+&kp P   &kp Y   &kp R   &kp W   &kp F                       &kp PERIOD  &kp COMMA  &kp U  &kp L  &kp Q
+&kp H   &kp S   &kp N   &kp T   &kp K   &none       &tog 6  &kp MINUS   &kp O      &kp A  &kp I  &kp E
+&kp B   &kp J   &kp M   &kp D   &kp G   &none       &tog 7  &kp SEMI    &kp V      &kp C  &kp X  &kp Z
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                               &kp ESCAPE
             >;
         };
     };
