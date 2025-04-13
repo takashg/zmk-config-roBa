@@ -121,8 +121,8 @@
 
         ONISHI_LAYOUT {
             bindings = <
-&kp Q               &kp L             &kp U    &kp COMMA        &kp MINUS                                  &kp F        &kp W    &kp R    &kp Y              &kp P
-&mt LEFT_CONTROL E  &mt LEFT_SHIFT I  &lt 4 A  &mt LEFT_ALT O   &kp PERIOD   &trans         &none          &kp K        &lt 1 T  &lt 4 N  &mt RIGHT_SHIFT S  &mt RIGHT_CONTROL H
+&kp Q               &kp L             &kp U    &kp COMMA        &kp PERIOD                                 &kp F        &kp W    &kp R    &kp Y              &kp P
+&mt LEFT_CONTROL E  &mt LEFT_SHIFT I  &lt 4 A  &mt LEFT_ALT O   &kp MINUS    &trans         &none          &kp K        &lt 1 T  &lt 4 N  &mt RIGHT_SHIFT S  &mt RIGHT_CONTROL H
 &mt ESCAPE Z        &kp X             &kp C    &kp V            &kp SEMI     &trans         &none          &kp G        &kp D    &kp M    &kp J              &mt LEFT_WIN B
 &none               &none             &none    &lt 1 LA(GRAVE)  &lt 2 SPACE  &lt 3 TAB      &kp BACKSPACE  &lt 5 ENTER                                       &none
             >;
