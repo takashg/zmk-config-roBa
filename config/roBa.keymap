@@ -19,13 +19,23 @@
     combos {
         compatible = "zmk,combos";
 
-        CAPS_LOCK {
-            bindings = <&kp CAPSLOCK>;
+        JP {
+            bindings = <&kp LANGUAGE_1>;
             key-positions = <11 12>;
         };
 
-        ONISHI_LAYER {
-            bindings = <&tog 6>;
+        ENG {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <20 19>;
+        };
+
+        CAPSLK {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <10 11>;
+        };
+
+        QWERTY {
+            bindings = <&to 6>;
             key-positions = <31 32>;
         };
     };
