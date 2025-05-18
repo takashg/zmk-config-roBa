@@ -35,7 +35,7 @@
         };
 
         QWERTY {
-            bindings = <&tog 6>;
+            bindings = <&tog 0>;
             key-positions = <31 32>;
         };
     };
@@ -44,7 +44,7 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 6 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
     };
@@ -63,13 +63,15 @@
     keymap {
         compatible = "zmk,keymap";
 
-        ONISHI_LAYOUT {
+        QWERTY {
             bindings = <
-&kp Q               &kp L             &kp U    &kp COMMA        &kp PERIOD                                 &kp F        &kp W           &kp R    &kp Y              &kp P
-&mt LEFT_CONTROL E  &mt LEFT_SHIFT I  &lt 4 A  &mt LEFT_ALT O   &kp MINUS    &trans         &none          &kp K        &mt LEFT_ALT T  &lt 4 N  &mt RIGHT_SHIFT S  &mt RIGHT_CONTROL H
-&mt ESCAPE Z        &kp X             &kp C    &kp V            &kp SEMI     &trans         &none          &kp G        &kp D           &lt 1 M  &kp J              &mt LEFT_WIN B
-&none               &none             &none    &lt 1 LA(GRAVE)  &lt 2 SPACE  &lt 3 TAB      &kp BACKSPACE  &lt 5 ENTER                                              &none
+&kp Q               &kp W             &kp E    &kp R            &kp T                                      &kp Y        &kp U    &kp I      &kp O              &kp P
+&mt LEFT_CONTROL A  &mt LEFT_SHIFT S  &lt 4 D  &mt LEFT_ALT F   &kp G        &none          &none          &kp H        &lt 1 J  &lt 4 K    &mt RIGHT_SHIFT L  &mt RIGHT_CONTROL MINUS
+&mt ESCAPE Z        &kp X             &kp C    &kp V            &kp B        &none          &none          &kp N        &kp M    &kp COMMA  &kp PERIOD         &kp LEFT_WIN
+&none               &none             &none    &lt 1 LA(GRAVE)  &lt 2 SPACE  &lt 3 TAB      &kp BACKSPACE  &lt 5 ENTER                                         &none
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         SHORTCUTS {
@@ -96,10 +98,10 @@
 
         SYMBOL {
             bindings = <
-&trans           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE                 &kp GRAVE                           &trans         &kp HASH   &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp CARET
-&kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH            &kp DOLLAR  &trans      &trans      &kp AMPERSAND  &kp SLASH  &kp COLON          &kp SEMICOLON     &kp QUESTION
-&kp AT           &kp LESS_THAN         &kp GREATER_THAN       &kp PERCENT              &trans      &trans      &trans      &trans         &kp TILDE  &kp COMMA          &kp PERIOD        &kp UNDER
-&trans           &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LANG_ZENKAKUHANKAKU  &trans      &trans      &kp DELETE  &trans                                                         &trans
+&trans           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE       &kp GRAVE                           &trans         &kp HASH   &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp CARET
+&kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp DOLLAR  &trans      &trans      &kp AMPERSAND  &kp SLASH  &kp COLON          &kp SEMICOLON     &kp QUESTION
+&kp AT           &kp LESS_THAN         &kp GREATER_THAN       &kp PERCENT    &trans      &trans      &trans      &trans         &kp TILDE  &kp COMMA          &kp PERIOD        &kp UNDER
+&trans           &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans         &trans      &trans      &kp DELETE  &trans                                                         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -107,10 +109,10 @@
 
         MOUSE_BLUETOOTH {
             bindings = <
-&bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4                      &none   &none     &none  &none     &none
-&kp LEFT_CONTROL  &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP    &none         &none       &none   &none   &mkp MB1  &none  &mkp MB2  &kp RIGHT_CONTROL
-&kp LEFT_SHIFT    &none         &none         &none           &none         &none       &none   &none   &mkp MB4  &none  &mkp MB5  &kp RIGHT_SHIFT
-&bt BT_CLR_ALL    &bt BT_CLR    &none         &kp LANGUAGE_1  &trans        &trans      &trans  &trans                             &none
+&bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &none   &none     &none  &none     &none
+&kp LEFT_CONTROL  &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP  &none         &none       &none   &none   &mkp MB1  &none  &mkp MB2  &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &none         &none         &none         &none         &none       &none   &none   &mkp MB4  &none  &mkp MB5  &kp RIGHT_SHIFT
+&bt BT_CLR_ALL    &bt BT_CLR    &none         &trans        &trans        &trans      &trans  &trans                             &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -118,24 +120,22 @@
 
         ARROW {
             bindings = <
-&trans            &trans               &kp PAGE_UP    &trans          &trans                      &trans  &trans          &kp UP_ARROW  &trans           &trans
-&kp LEFT_CONTROL  &mt LEFT_SHIFT HOME  &kp PAGE_DOWN  &kp END         &trans  &none       &none   &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp RIGHT_CONTROL
-&kp LEFT_SHIFT    &kp LC(SPACE)        &kp LS(SPACE)  &trans          &trans  &trans      &trans  &trans  &trans          &kp LC(PLUS)  &kp LC(MINUS)    &kp RIGHT_SHIFT
-&trans            &trans               &trans         &kp LANGUAGE_2  &trans  &trans      &trans  &trans                                                 &trans
+&trans            &trans               &kp PAGE_UP    &trans   &trans                      &trans  &trans          &kp UP_ARROW  &trans           &trans
+&kp LEFT_CONTROL  &mt LEFT_SHIFT HOME  &kp PAGE_DOWN  &kp END  &trans  &none       &none   &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &kp LC(SPACE)        &kp LS(SPACE)  &trans   &trans  &trans      &trans  &trans  &trans          &kp LC(PLUS)  &kp LC(MINUS)    &kp RIGHT_SHIFT
+&trans            &trans               &trans         &trans   &trans  &trans      &trans  &trans                                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
-        QWERTY {
+        ONISHI_LAYOUT {
             bindings = <
-&kp Q               &kp W             &kp E    &kp R            &kp T                                      &kp Y        &kp U    &kp I      &kp O              &kp P
-&mt LEFT_CONTROL A  &mt LEFT_SHIFT S  &lt 4 D  &mt LEFT_ALT F   &kp G        &none          &none          &kp H        &lt 1 J  &lt 4 K    &mt RIGHT_SHIFT L  &mt RIGHT_CONTROL MINUS
-&mt ESCAPE Z        &kp X             &kp C    &kp V            &kp B        &none          &none          &kp N        &kp M    &kp COMMA  &kp PERIOD         &kp LEFT_WIN
-&none               &none             &none    &lt 1 LA(GRAVE)  &lt 2 SPACE  &lt 3 TAB      &kp BACKSPACE  &lt 5 ENTER                                         &none
+&kp Q               &kp L             &kp U    &kp COMMA        &kp PERIOD                                 &kp F        &kp W           &kp R    &kp Y              &kp P
+&mt LEFT_CONTROL E  &mt LEFT_SHIFT I  &lt 4 A  &mt LEFT_ALT O   &kp MINUS    &trans         &none          &kp K        &mt LEFT_ALT T  &lt 4 N  &mt RIGHT_SHIFT S  &mt RIGHT_CONTROL H
+&mt ESCAPE Z        &kp X             &kp C    &kp V            &kp SEMI     &trans         &none          &kp G        &kp D           &lt 1 M  &kp J              &mt LEFT_WIN B
+&none               &none             &none    &lt 1 LA(GRAVE)  &lt 2 SPACE  &lt 3 TAB      &kp BACKSPACE  &lt 5 ENTER                                              &none
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
     };
 };
