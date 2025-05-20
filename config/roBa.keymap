@@ -31,17 +31,12 @@
 
         CAPSLK {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <10 11>;
+            key-positions = <23 24>;
         };
 
         ONISHI {
             bindings = <&tog 6>;
             key-positions = <31 32>;
-        };
-
-        TG_RAYOUT {
-            bindings = <&tog 7>;
-            key-positions = <23 24>;
         };
     };
 
