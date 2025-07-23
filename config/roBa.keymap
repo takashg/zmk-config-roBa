@@ -82,10 +82,10 @@
 
         NUMBER {
             bindings = <
-&kp F11  &kp F12  &kp COLON  &none   &none                        &kp EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
-&kp F1   &kp F2   &kp F3     &kp F4  &kp F5   &trans      &trans  &kp NUMBER_0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
-&kp F6   &kp F7   &kp F8     &kp F9  &kp F10  &trans      &trans  &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTRK
-&none    &none    &none      &trans  &trans   &trans      &trans  &trans                                                  &kp SLASH
+&kp F11  &kp F12  &kp COLON  &kp INS  &none                        &kp EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
+&kp F1   &kp F2   &kp F3     &kp F4   &kp F5   &trans      &trans  &kp NUMBER_0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
+&kp F6   &kp F7   &kp F8     &kp F9   &kp F10  &trans      &trans  &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTRK
+&none    &none    &none      &trans   &trans   &trans      &trans  &trans                                                  &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -106,7 +106,7 @@
             bindings = <
 &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &none   &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &none
 &kp LEFT_CONTROL  &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP  &none         &trans      &trans  &none   &mkp MB1      &none       &mkp MB2      &kp RIGHT_CONTROL
-&kp LEFT_SHIFT    &none         &none         &none         &none         &trans      &trans  &none   &mkp MB4      &none       &mkp MB5      &kp RIGHT_SHIFT
+&kp LEFT_SHIFT    &kp C_BRI_DN  &none         &kp C_BRI_UP  &none         &trans      &trans  &none   &mkp MB4      &none       &mkp MB5      &kp RIGHT_SHIFT
 &bt BT_CLR_ALL    &bt BT_CLR    &none         &trans        &trans        &trans      &trans  &trans                                          &none
             >;
 
