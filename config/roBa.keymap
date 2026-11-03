@@ -105,8 +105,8 @@
         MOUSE_BLUETOOTH {
             bindings = <
 &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &none   &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &none
-&kp LEFT_CONTROL  &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP  &none         &trans      &trans  &none   &mkp MB1      &none       &mkp MB2      &kp RIGHT_CONTROL
-&kp LEFT_SHIFT    &kp C_BRI_DN  &none         &kp C_BRI_UP  &none         &trans      &trans  &none   &mkp MB4      &none       &mkp MB5      &kp RIGHT_SHIFT
+&kp LEFT_CONTROL  &kp C_VOL_DN  &mkp MB3      &kp C_VOL_UP  &none         &trans      &trans  &none   &mkp MB1      &mkp MB3    &mkp MB2      &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &kp C_BRI_DN  &kp C_MUTE    &kp C_BRI_UP  &none         &trans      &trans  &none   &mkp MB4      &kp C_MUTE  &mkp MB5      &kp RIGHT_SHIFT
 &bt BT_CLR_ALL    &bt BT_CLR    &none         &trans        &trans        &trans      &trans  &trans                                          &none
             >;
 
